@@ -10,15 +10,27 @@ const cartSlice = createSlice({
         add(state, action) {
          
          if(state.cartItem.find((i)=>i.id === action.payload.id)){
-           console.log('added');
+          state.cartItem = state.cartItem.map((i) => i.id === action.payload.id ? {...i, quantity: i.quantity + 1}: i);
+
+           //let data = state.cartItem.find((i)=>i.id === action.payload.id);
+           //console.log(`${data.id} - ${data.quantity + 1}`);
          }else{
-           let array = action.payload;
-          state.cartItem.push(Object.assign(merge(array, {quantity: 1})));  
-          console.log(state.cartItem)
+           let i = action.payload;
+          //state.cartItem.push(Object.assign(merge(array, {quantity: 1})));  
+          state.cartItem.push({
+            id: i.id,
+            title: i.title,
+            image: i.image,
+            description: i.description,
+            price: i.price,
+            quantity: 1
+          })
          }
         },
         remove(state, action){
-          return   state.filter((item)=>item.id !== action.payload);
+          //return   state.cartItem.filter((item)=>item.id !== action.payload);
+          //console.log(state.cartItem);
+          state.cartItem = state.cartItem.filter((item)=>item.id !== action.payload)
         },
     } , 
 });

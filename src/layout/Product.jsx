@@ -13,7 +13,8 @@ function Product() {
   
     
     useEffect(()=>{
-        dispatch(fetchProducts())
+        dispatch(fetchProducts());
+        
     },[])
 
     const handleAdd = (product)=>{

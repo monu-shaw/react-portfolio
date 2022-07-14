@@ -1,31 +1,36 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import {useSelector} from 'react-redux'
-function Navbar() {
-    const items =  useSelector(state => state.cart)
+import {useSelector, useDispatch} from 'react-redux'
+import { logout } from '../store/login'
+import { Navbar, Nav, NavDropdown,Container } from 'react-bootstrap';
+
+function NavbarLayout() {
+    const status = useSelector((state) => state.logged.logged)
+    const dispatch = useDispatch();
+    const handelLogout =()=>{
+        dispatch(logout());
+    }
+    
   return (
-    <div className="row" style={{margin: '0', backgroundColor: '#2ddfed'}}>
-    <div className="d-flex align-items-center flex-row bd-highlight justify-content-between">
-        <div className="p-2 bd-highlight">
-        <Link to="/" className="navbar-brand  fs-2">
-            Navbar
-        </Link>
-        </div>
-        <div className="p-2 bd-highlight">
-            <div className="container-fluid">
-            </div>  
-        </div>
-        <div className="p-2 bd-highlight">
-        <Link to="/cart">
-        <button type="button" className="btn btn-success mx-4" >
-            <i className="bi bi-bag-heart"></i> {items.length}<span className="badge text-bg-danger"></span>
-            </button>
-        </Link>
-            
-        </div>
-    </div>
-</div>
+    <Navbar className="col-12 col-lg-11 mx-auto my-2 navbar-dark" expand="lg">
+    <Container>
+        <Navbar.Brand ><Link className="navbar-brand fs-2" to="/">Nexenture</Link></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0" />
+        <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto mx-auto">
+                <Nav.Link ><Link to="/"className="nav-link fs-4" aria-current="page">Home</Link></Nav.Link>
+                <Nav.Link ><Link to="/demo" className="nav-link fs-4">Demo</Link></Nav.Link>
+                <Nav.Link ><Link to="/contact" className="nav-link fs-4 ">Contact Us</Link></Nav.Link>
+                <Nav.Link ><Link to="/blog" className="nav-link fs-4">Blog</Link></Nav.Link>
+            </Nav>
+            <div className="d-flex">
+                  <Link to="/contact"><button className="btn btn-outline-light rounded-pill p-2 border-0">Contact Us</button></Link>
+            </div>
+        </Navbar.Collapse>
+    </Container>
+    </Navbar>
+
   )
 }
 
-export default Navbar
+export default NavbarLayout
