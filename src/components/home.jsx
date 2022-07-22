@@ -36,7 +36,7 @@ function Home() {
             <div className="col-12 col-md-6 col-lg-5 mx-auto my-4 py-4" data-aos="fade-up" data-aos-duration="1500">
                 <p className="fss-1 text-light px-4 pt-4 mt-4"><span className="fw-bold main-text main-grad-color fss-1">Digital designer</span><br/>  crafting products that people love.</p>
                 <p className="px-4 fs-4">We have a team of passinated designer and developer who works with startups looking to push creative boundaries and create unique user experiences.</p>
-                <a href="#" className="btn py-3 mx-2 rounded-pill shadow main-bg-grad-color text-light fw-bold float-start call-home-button">Book a FREE Call <i className="bi bi-telephone call-home-icon bg-light p-2 rounded-circle text-dark"></i></a>
+                <a href="/#" className="btn py-3 mx-2 rounded-pill shadow main-bg-grad-color text-light fw-bold float-start call-home-button">Book a FREE Call <i className="bi bi-telephone call-home-icon bg-light p-2 rounded-circle text-dark"></i></a>
             </div>
             <div className="col-12 col-md-6 col-lg-6 mx-auto my-4 d-flex align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="2000">
                     <div className="col-12 col-md-10 col-lg-10 mx-auto img-container rounded-2">
@@ -122,7 +122,7 @@ function Home() {
                         <div className="col-6"></div>
                     </div>
                     <p className="card-text">Some quick project details to added on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" className="btn btn-outline-dark border-0 p-2">View Demo <i className="bi bi-arrow-right p-1 rounded-circle main-grad-color2 text-light fw-bold"></i></a>
+                    <a href="/#" className="btn btn-outline-dark border-0 p-2">View Demo <i className="bi bi-arrow-right p-1 rounded-circle main-grad-color2 text-light fw-bold"></i></a>
                   </div>
                 </div>
             </div>
@@ -179,7 +179,7 @@ function Home() {
                         <div className="col-6"></div>
                     </div>
                     <p className="card-text">Some quick project details to added on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" className="btn btn-outline-dark border-0 p-2">View Demo <i className="bi bi-arrow-right p-1 rounded-circle main-grad-color2 text-light fw-bold"></i></a>
+                    <a href="/#" className="btn btn-outline-dark border-0 p-2">View Demo <i className="bi bi-arrow-right p-1 rounded-circle main-grad-color2 text-light fw-bold"></i></a>
                   </div>
                 </div>
             </div>
@@ -198,7 +198,7 @@ function Home() {
                 <div className="col-12 col-lg-6 text-center py-4 text-light" data-aos="fade-in-down" data-aos-duration="2000">
                     <h1 className=" text-start t-6">Our process that help our clients to <br /><span className="main-grad-color">2x their revnue</span></h1>
                     <p className="fs-5 text-start">we discover this process working more than 10+ in the design industry that why you can trust blindly.</p>
-                    <a href="#" className="btn py-3 rounded-pill shadow main-bg-grad-color text-light fw-bold float-start call-home-button">Book a FREE Call <i className="bi bi-telephone call-home-icon bg-light p-2 rounded-circle text-dark"></i></a>
+                    <a href="/#" className="btn py-3 rounded-pill shadow main-bg-grad-color text-light fw-bold float-start call-home-button">Book a FREE Call <i className="bi bi-telephone call-home-icon bg-light p-2 rounded-circle text-dark"></i></a>
                 </div>
                 <div className="col-12 col-lg-6 mx-auto">
                     <div className="col-12 mx-auto main-grad-color2 p-4" data-aos="fade-in-up" data-aos-duration="2000">
@@ -327,7 +327,7 @@ function Home() {
         <h1 className="col-12 col-lg-6 mx-auto mt-4 t-6">Have projects in mind? Let’s work <span className="main-grad-color">together</span></h1>
         <p className="fs-6 col-11 col-lg-5 mx-auto">We have a team of passinate designer who works with startups looking to push creative boundaries</p>
         <div className="col-10 col-xl-3 mx-auto">
-            <a href="#" className="btn float-center mb-4 py-3 rounded-pill shadow main-bg-grad-color text-light fw-bold call-home-button2">Book a FREE Call <i className="bi bi-telephone call-home-icon bg-light p-2 rounded-circle text-dark"></i></a>
+            <a href="/#" className="btn float-center mb-4 py-3 rounded-pill shadow main-bg-grad-color text-light fw-bold call-home-button2">Book a FREE Call <i className="bi bi-telephone call-home-icon bg-light p-2 rounded-circle text-dark"></i></a>
         </div>    
     </div>
     {/*Custom Project*/}

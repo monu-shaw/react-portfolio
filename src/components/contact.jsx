@@ -5,11 +5,10 @@ import React, { useEffect, useState } from 'react'
 
     var error = 0;
       function blankCheck(x){
-        if(x == ''){
+        if(String(x) === ''){
           error++;
         }
       }
-      var  data2 = '';
 function Contact() {
     const [state, setstate] = useState('row g-2 col-10 mx-auto my-2');
     const [state2, setstate2] = useState('py-4 my-4 px-2 mx-auto d-none');
@@ -18,7 +17,6 @@ function Contact() {
             method: "POST",
             body: x,
     });
-        const data = await res.text();
         setstate(state+' d-none');
         setstate2('py-4 my-4 px-2 mx-auto');
     }
@@ -126,7 +124,7 @@ function Contact() {
     {/* main section */}
     {/* map section */}
     <div className="col-11 col-lg-8 mx-auto main-bg-grad-color-2 p-4 my-4" data-aos="fade-up" data-aos-duration="2000">
-    <iframe className="m-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.6687037230254!2d88.35183441495926!3d22.554079885192326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027726a6737b7f%3A0xe312fa066824af88!2sNexenture%20Private%20Limited!5e0!3m2!1sen!2sin!4v1654750876211!5m2!1sen!2sin" height="450" style={{border:0,width:'100%'}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+    <iframe title="googleMap" className="m-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.6687037230254!2d88.35183441495926!3d22.554079885192326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027726a6737b7f%3A0xe312fa066824af88!2sNexenture%20Private%20Limited!5e0!3m2!1sen!2sin!4v1654750876211!5m2!1sen!2sin" height="450" style={{border:0,width:'100%'}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
     </div>
     {/* map section */}
     </>

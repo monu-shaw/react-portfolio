@@ -7,7 +7,7 @@ function Message() {
     const {id} = useParams();
     //alert(id);
     const load = async (x) => {
-        const res = await fetch('http://localhost/clients/api.php?order_id='+id); 
+        const res = await fetch('http://test.nexenture.net/cms/api.php?order_id='+id); 
         const data = await res.json();
         setData(data);
     }
