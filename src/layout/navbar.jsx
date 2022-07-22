@@ -1,20 +1,14 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import {useSelector, useDispatch} from 'react-redux'
-import { logout } from '../store/login'
-import { Navbar, Nav, NavDropdown,Container } from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
 function NavbarLayout() {
-    const status = useSelector((state) => state.logged.logged)
-    const dispatch = useDispatch();
-    const handelLogout =()=>{
-        dispatch(logout());
-    }
+    
     
   return (
     <Navbar className="col-12 col-lg-11 mx-auto my-2 navbar-dark" expand="lg">
     <Container>
-        <Navbar.Brand ><Link className="navbar-brand fs-2" to="/">Nexenture</Link></Navbar.Brand>
+        <Navbar.Brand ><Link className="navbar-brand fs-2" to="/">Logo</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto mx-auto">

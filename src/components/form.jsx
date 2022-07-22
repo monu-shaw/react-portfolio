@@ -2,7 +2,7 @@ import React from 'react'
 
 var error = 0;
       function blankCheck(x){
-        if(x == ''){
+        if(String(x) === ''){
           error++;
         }
       }
@@ -11,7 +11,7 @@ function Form() {
 
 
     const load = async (x) => {
-        const res = await fetch('http://localhost/clients/api.php',{
+        const res = await fetch('http://test.nexenture.net/clients/api.php',{
     // Adding method type
     method: "POST",
     // Adding body or contents to send
